@@ -52,7 +52,7 @@ export async function sendOrderNotification(input: OrderNotificationInput) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   await resend.emails.send({
-    from: "Urban Vogue Orders <orders@urbanvogue.store>",
+    from: "onboarding@resend.dev",
     to: notificationEmail,
     subject: "New Order - Urban Vogue",
     text: `New Order Received
